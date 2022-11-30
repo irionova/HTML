@@ -1,81 +1,66 @@
 *{
-  font-family: 'Montserrat Alternates', sans-serif;
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  }
-
-  li, a, button{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #ecf0f1;
-    text-decoration: none;
+  margin: 0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 
 }
 
-
-header {
-
-    height: 100px;
-    background-color: #321b1b;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    justify-content: space-around;
+body{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://sun9-23.userapi.com/impg/r7hlvLf_kjEXXcGqvJMFbZR8RS7REWKYcSrVFA/6XQEqZV_FaM.jpg?size=2560x1708&quality=96&sign=d9aabe5da04823ae8511db954a64bba4&type=album);
+  background-size: cover;
+  background-position: center;
 
 }
 
-#logo {
-    order: ;
-    padding: 5px;
-    height: 100px;
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.logo{
+  color: white;
+ font-style: italic;
 
 }
-
-
-nav {
-    order: ;
-  }
-  
-nav > ul {
-    list-style: none;
-  }
-  
-  nav > ul > li {
-    padding: 0px 20px;
-    display: inline-block;
-  }
-  
-  nav > ul > li:hover {
-    color:#0088a9;
-    cursor: pointer;
-  }
-  
-  li > a {
-
-    color: inherit;
-    text-decoration: none;
-  }
-  button{
-    margin-left: 20px;
-    padding:9px 25px;
-    background-color: rgba(0, 136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-.social-icons{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    align-items: center;
-    background-color: pink;
-    border: 2px solid white;
+.colored{
+  color: #ea1538;
 }
 
-.joinus{}
+nav ul li{
+  list-style-type: nope;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+nav ul li a{
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-.about{}
+nav ul li a:hover{
+  color: #ea1538;
+  transition: .3s;
+}
+
+button{
+  border: none;
+  background:#ea1538;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  color: white;
+}
+
+button:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+}
