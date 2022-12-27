@@ -20,9 +20,19 @@ body{
 }
 
 .first{
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://sun9-23.userapi.com/impg/r7hlvLf_kjEXXcGqvJMFbZR8RS7REWKYcSrVFA/6XQEqZV_FaM.jpg?size=2560x1708&quality=96&sign=d9aabe5da04823ae8511db954a64bba4&type=album);
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(https://sun9-23.userapi.com/impg/r7hlvLf_kjEXXcGqvJMFbZR8RS7REWKYcSrVFA/6XQEqZV_FaM.jpg?size=2560x1708&quality=96&sign=d9aabe5da04823ae8511db954a64bba4&type=album);
+
+  /*linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(https://vk.com/doc60141675_649564080?hash=XeSdyBI94OMexz8tkfLuQrTxSWvRdBZljii2OflimAc&dl=oE83krizCSS3IBGwQCkI6APbTlLqrqO6N3rTViyN1kg&wnd=1) ;
+  */
   background-size: cover;
   background-position: center;
+}
+
+.second{
+}
+
+.third{
+
 }
 
 header{
@@ -59,11 +69,11 @@ header{
   font-weight: 800;
 }
 
-.navlist{
+nav ul{
   display: flex;
 }
 
-.navlist a{
+nav ul a{
   color: var(--text-color);
   padding: 5px 5px;
   margin: 0 22px;
@@ -71,7 +81,7 @@ header{
   letter-spacing: 1px;
   transition: all .40s ease;
 }
-.navlist a:hover{
+nav ul a:hover{
   color: var(--main-color);
   transition: 0.3s;
 }
@@ -162,8 +172,6 @@ section{
   letter-spacing: 2px;
 }
 
-
-
 .left i{
   display: block;
 }
@@ -183,17 +191,18 @@ section{
   position: relative;
   width: 100%;
   height: 100vh;
-  background:#0f051d;
+  /*background:#0f051d;*/
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.team h1{
+.team h1, .learning h1{
   color: #fff;
   font-size: 4rem;
   text-align: center;
+  padding-bottom: 25px;
 }
 
 .box{
@@ -237,7 +246,32 @@ section{
   margin-bottom: 15px;
 }
 
+.learning-content{
+  display: grid;
+  grid-template: 500px/1fr 1fr;
+  grid-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1350px;
 
+}
+
+.classes{
+  
+}
+
+.school{
+  
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  background: #000;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+}
 #menu-icon{
   color: var(--main-color);
   font-size: 26px;
@@ -299,7 +333,7 @@ section{
       font-size: 25px;
       border-radius: 10px;
   }
-  .navlist{
+  nav ul{
       position: absolute;
       top: -600px;
       left:0;
@@ -310,7 +344,7 @@ section{
       text-align: left;
       transition: all .43s ease;
   }
-  .navlist a{
+  nav ul a{
       font-size: 15px;
       display: block;
       padding: 0.5rem;
@@ -318,12 +352,12 @@ section{
       border-bottom: none;
       border-left: 2px solid var(--text-color);
   }
-  .navlist a:hover{
+  nav ul a:hover{
       border-bottom: none;
       background: #fff;
       color: var(--bg-color);
   }
-  .navlist.open{
+  nav ul.open{
       top: 100%;
   }
 }
