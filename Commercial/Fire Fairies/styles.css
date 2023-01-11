@@ -20,19 +20,29 @@ body{
 }
 
 .first{
-  background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(https://sun9-23.userapi.com/impg/r7hlvLf_kjEXXcGqvJMFbZR8RS7REWKYcSrVFA/6XQEqZV_FaM.jpg?size=2560x1708&quality=96&sign=d9aabe5da04823ae8511db954a64bba4&type=album);
-
-  /*linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(https://vk.com/doc60141675_649564080?hash=XeSdyBI94OMexz8tkfLuQrTxSWvRdBZljii2OflimAc&dl=oE83krizCSS3IBGwQCkI6APbTlLqrqO6N3rTViyN1kg&wnd=1) ;
-  */
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(img/bg1.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .second{
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(img/bg2.jpg);
+
+  background-size: cover;
+  background-position: center;
 }
 
 .third{
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(img/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
+.last{
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(img/team.jpg);
+
+  background-size: cover;
+  background-position: center;
 }
 
 header{
@@ -196,6 +206,7 @@ section{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-position: center;
 }
 
 .team h1, .learning h1{
@@ -257,11 +268,13 @@ section{
 }
 
 .classes{
-  
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(img/mk.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 .school{
-  
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.7) 75%,#000 100%), url(img/school.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 footer{
